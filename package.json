@@ -1,11 +1,20 @@
 {
-  "name": "pentagone",
+  "name": "wfb-map",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "@deck.gl/mapbox": "^6.4.9",
+    "deck.gl": "^6.4.9",
+    "emotion": "^10.0.7",
+    "immutable": "^4.0.0-rc.12",
+    "mapbox-gl": "^0.53.1",
+    "react": "^16.8.1",
+    "react-checkbox-group": "^4.0.1",
+    "react-dom": "^16.8.1",
+    "react-map-gl": "^4.0.10",
+    "react-mapbox-gl": "^4.2.0",
+    "react-scripts": "2.1.5",
+    "react-select": "^2.4.2"
   },
   "scripts": {
     "start": "react-scripts start",

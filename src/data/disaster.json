@@ -1,0 +1,1629 @@
+{
+    "0": [
+        {
+            "p3_1": {
+                "coordinates": {
+                    "lat": 34.07516640588211,
+                    "long": -118.44067860345045
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_5": {
+                "coordinates": {
+                    "lat": 34.075025053968524,
+                    "long": -118.44132807035474
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_18": {
+                "coordinates": {
+                    "lat": 34.07472670381466,
+                    "long": -118.44144876934844
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p4_1": {
+                "coordinates": {
+                    "lat": 34.07565378589623,
+                    "long": -118.44134192920896
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_2": {
+                "coordinates": {
+                    "lat": 34.07547591412387,
+                    "long": -118.44143948431109
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_3": {
+                "coordinates": {
+                    "lat": 34.07619042797464,
+                    "long": -118.4412448639296
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_4": {
+                "coordinates": {
+                    "lat": 34.07617270381466,
+                    "long": -118.44205376934845
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_5": {
+                "coordinates": {
+                    "lat": 34.07560605596019,
+                    "long": -118.44063782226664
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_6": {
+                "coordinates": {
+                    "lat": 34.076552172681836,
+                    "long": -118.44120887820684
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_7": {
+                "coordinates": {
+                    "lat": 34.075578791397994,
+                    "long": -118.44109502717734
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_8": {
+                "coordinates": {
+                    "lat": 34.07661240588211,
+                    "long": -118.44128360345046
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_9": {
+                "coordinates": {
+                    "lat": 34.07576110687336,
+                    "long": -118.44061159239315
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_10": {
+                "coordinates": {
+                    "lat": 34.076471053968525,
+                    "long": -118.44193307035475
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_11": {
+                "coordinates": {
+                    "lat": 34.0761907953603,
+                    "long": -118.44065175283056
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_12": {
+                "coordinates": {
+                    "lat": 34.07589951954803,
+                    "long": -118.44102768518775
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_13": {
+                "coordinates": {
+                    "lat": 34.07567855488725,
+                    "long": -118.44137088471713
+                },
+                "status": true
+            }
+        },
+        {
+            "p4_14": {
+                "coordinates": {
+                    "lat": 34.07630688472117,
+                    "long": -118.44145294563366
+                },
+                "status": true
+            }
+        }
+    ],
+    "1": [
+        {
+            "Michael": {
+                "coordinates": {
+                    "lat": 34.07055555555556,
+                    "long": -118.45111111111112
+                },
+                "status": false,
+                "injured": 6,
+                "fire": true,
+                "collapsed": true,
+                "priority": 1,
+                "resourcesNeeded": 1
+            }
+        },
+        {
+            "p1_0": {
+                "coordinates": {
+                    "lat": 34.072459149860066,
+                    "long": -118.4514314956771
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 10,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_1": {
+                "coordinates": {
+                    "lat": 34.07238540387739,
+                    "long": -118.45180949782329
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 9,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_2": {
+                "coordinates": {
+                    "lat": 34.07202466885686,
+                    "long": -118.45130221810685
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 5,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_3": {
+                "coordinates": {
+                    "lat": 34.07209591412387,
+                    "long": -118.45202748431109
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 8,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_4": {
+                "coordinates": {
+                    "lat": 34.072198791397994,
+                    "long": -118.45168302717734
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 8,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_5": {
+                "coordinates": {
+                    "lat": 34.072517817473624,
+                    "long": -118.45250210060792
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 5,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_6": {
+                "coordinates": {
+                    "lat": 34.07178874090099,
+                    "long": -118.45166567136121
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 7,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_7": {
+                "coordinates": {
+                    "lat": 34.07204999957803,
+                    "long": -118.45114198398296
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 7,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_8": {
+                "coordinates": {
+                    "lat": 34.0722488359287,
+                    "long": -118.45159137903447
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 7,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_9": {
+                "coordinates": {
+                    "lat": 34.07251008515998,
+                    "long": -118.45166712492325
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 7,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_10": {
+                "coordinates": {
+                    "lat": 34.07251951954803,
+                    "long": -118.45161568518775
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 9,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_11": {
+                "coordinates": {
+                    "lat": 34.072188073162216,
+                    "long": -118.45146920157158
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 9,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_12": {
+                "coordinates": {
+                    "lat": 34.07201641364994,
+                    "long": -118.45191360282075
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 6,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_13": {
+                "coordinates": {
+                    "lat": 34.072455457742336,
+                    "long": -118.45044087243177
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 9,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_14": {
+                "coordinates": {
+                    "lat": 34.07198642085313,
+                    "long": -118.45064477269949
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 5,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_15": {
+                "coordinates": {
+                    "lat": 34.073091053968525,
+                    "long": -118.45252107035475
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 9,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_16": {
+                "coordinates": {
+                    "lat": 34.07323240588211,
+                    "long": -118.45187160345046
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 5,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_17": {
+                "coordinates": {
+                    "lat": 34.07292688472117,
+                    "long": -118.45204094563366
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 6,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_18": {
+                "coordinates": {
+                    "lat": 34.0728107953603,
+                    "long": -118.45123975283056
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 5,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_19": {
+                "coordinates": {
+                    "lat": 34.07225555288331,
+                    "long": -118.45119768840442
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 10,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_20": {
+                "coordinates": {
+                    "lat": 34.0724532806955,
+                    "long": -118.4512859741764
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 7,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_21": {
+                "coordinates": {
+                    "lat": 34.07222605596019,
+                    "long": -118.45122582226664
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 7,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_22": {
+                "coordinates": {
+                    "lat": 34.07244001853473,
+                    "long": -118.45105291553945
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 9,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_23": {
+                "coordinates": {
+                    "lat": 34.07250279366263,
+                    "long": -118.45104842941787
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 9,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_24": {
+                "coordinates": {
+                    "lat": 34.07345278770327,
+                    "long": -118.45218924816776
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 6,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_25": {
+                "coordinates": {
+                    "lat": 34.07247504736768,
+                    "long": -118.45110999440985
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 6,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_26": {
+                "coordinates": {
+                    "lat": 34.072024376934586,
+                    "long": -118.45149733229947
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 6,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_27": {
+                "coordinates": {
+                    "lat": 34.072420079476245,
+                    "long": -118.45118239844516
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 5,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_28": {
+                "coordinates": {
+                    "lat": 34.072172357524956,
+                    "long": -118.45181036520373
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 10,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_29": {
+                "coordinates": {
+                    "lat": 34.07281042797464,
+                    "long": -118.4518328639296
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 5,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_30": {
+                "coordinates": {
+                    "lat": 34.073172172681836,
+                    "long": -118.45179687820684
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 8,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_31": {
+                "coordinates": {
+                    "lat": 34.07238110687336,
+                    "long": -118.45119959239315
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 6,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_32": {
+                "coordinates": {
+                    "lat": 34.07201416962414,
+                    "long": -118.45168937676343
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 5,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_33": {
+                "coordinates": {
+                    "lat": 34.07229855488725,
+                    "long": -118.45195888471713
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 9,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_34": {
+                "coordinates": {
+                    "lat": 34.07257174717704,
+                    "long": -118.45145232996583
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 9,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_35": {
+                "coordinates": {
+                    "lat": 34.07220689799369,
+                    "long": -118.4510770126787
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 10,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_36": {
+                "coordinates": {
+                    "lat": 34.072959458939955,
+                    "long": -118.45139842179127
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 10,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_37": {
+                "coordinates": {
+                    "lat": 34.071637943097286,
+                    "long": -118.45174323293148
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 5,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_38": {
+                "coordinates": {
+                    "lat": 34.07227378589623,
+                    "long": -118.45192992920896
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 9,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_39": {
+                "coordinates": {
+                    "lat": 34.0718096904114,
+                    "long": -118.45091863814508
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 5,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_40": {
+                "coordinates": {
+                    "lat": 34.071982801029506,
+                    "long": -118.45086456592239
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 9,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_41": {
+                "coordinates": {
+                    "lat": 34.0724209106355,
+                    "long": -118.45092625804605
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 8,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_42": {
+                "coordinates": {
+                    "lat": 34.07261646491021,
+                    "long": -118.45164004641755
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 6,
+                "collapsed": 2,
+                "priority": 2
+            }
+        },
+        {
+            "p1_43": {
+                "coordinates": {
+                    "lat": 34.07180134482569,
+                    "long": -118.4513737921511
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 7,
+                "collapsed": 1,
+                "priority": 2
+            }
+        },
+        {
+            "p1_44": {
+                "coordinates": {
+                    "lat": 34.07277949170694,
+                    "long": -118.45102544895936
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 8,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_45": {
+                "coordinates": {
+                    "lat": 34.07260425907327,
+                    "long": -118.45152878585651
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 7,
+                "injured": 7,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_46": {
+                "coordinates": {
+                    "lat": 34.07318990108856,
+                    "long": -118.45111997791972
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 9,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_47": {
+                "coordinates": {
+                    "lat": 34.072264082223825,
+                    "long": -118.45193481448204
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 5,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_48": {
+                "coordinates": {
+                    "lat": 34.07279270381466,
+                    "long": -118.45264176934845
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 5,
+                "injured": 9,
+                "collapsed": 0,
+                "priority": 2
+            }
+        },
+        {
+            "p1_49": {
+                "coordinates": {
+                    "lat": 34.072925814693725,
+                    "long": -118.45073109159179
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 6,
+                "injured": 5,
+                "collapsed": 2,
+                "priority": 2
+            }
+        }
+    ],
+    "2": [
+        {
+            "p2_0": {
+                "coordinates": {
+                    "lat": 34.06875579139799,
+                    "long": -118.44273402717734
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 7,
+                "injured": 12,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_1": {
+                "coordinates": {
+                    "lat": 34.06878305596019,
+                    "long": -118.44227682226663
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 5,
+                "injured": 14,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_2": {
+                "coordinates": {
+                    "lat": 34.069789405882105,
+                    "long": -118.44292260345046
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 6,
+                "injured": 11,
+                "collapsed": 3,
+                "priority": 1
+            }
+        },
+        {
+            "p2_3": {
+                "coordinates": {
+                    "lat": 34.06964805396852,
+                    "long": -118.44357207035475
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 5,
+                "injured": 14,
+                "collapsed": 3,
+                "priority": 1
+            }
+        },
+        {
+            "p2_4": {
+                "coordinates": {
+                    "lat": 34.06974690108856,
+                    "long": -118.44217097791972
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 5,
+                "injured": 14,
+                "collapsed": 3,
+                "priority": 1
+            }
+        },
+        {
+            "p2_5": {
+                "coordinates": {
+                    "lat": 34.068366690411395,
+                    "long": -118.44196963814508
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 6,
+                "injured": 11,
+                "collapsed": 3,
+                "priority": 1
+            }
+        },
+        {
+            "p2_6": {
+                "coordinates": {
+                    "lat": 34.06894240387739,
+                    "long": -118.44286049782329
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 6,
+                "injured": 14,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_7": {
+                "coordinates": {
+                    "lat": 34.068571169624136,
+                    "long": -118.44274037676342
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 7,
+                "injured": 13,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_8": {
+                "coordinates": {
+                    "lat": 34.06865291412387,
+                    "long": -118.44307848431109
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 7,
+                "injured": 15,
+                "collapsed": 3,
+                "priority": 1
+            }
+        },
+        {
+            "p2_9": {
+                "coordinates": {
+                    "lat": 34.068573413649936,
+                    "long": -118.44296460282075
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 7,
+                "injured": 11,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_10": {
+                "coordinates": {
+                    "lat": 34.06882108222382,
+                    "long": -118.44298581448204
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 5,
+                "injured": 14,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_11": {
+                "coordinates": {
+                    "lat": 34.06934970381466,
+                    "long": -118.44369276934844
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 6,
+                "injured": 11,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_12": {
+                "coordinates": {
+                    "lat": 34.06972917268183,
+                    "long": -118.44284787820683
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 6,
+                "injured": 12,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_13": {
+                "coordinates": {
+                    "lat": 34.068938106873354,
+                    "long": -118.44225059239315
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 6,
+                "injured": 11,
+                "collapsed": 3,
+                "priority": 1
+            }
+        },
+        {
+            "p2_14": {
+                "coordinates": {
+                    "lat": 34.06835834482568,
+                    "long": -118.4424247921511
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 7,
+                "injured": 13,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_15": {
+                "coordinates": {
+                    "lat": 34.06901245774233,
+                    "long": -118.44149187243177
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 5,
+                "injured": 10,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_16": {
+                "coordinates": {
+                    "lat": 34.06858137693458,
+                    "long": -118.44254833229947
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 7,
+                "injured": 14,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_17": {
+                "coordinates": {
+                    "lat": 34.06897707947624,
+                    "long": -118.44223339844515
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 7,
+                "injured": 15,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_18": {
+                "coordinates": {
+                    "lat": 34.06907651954803,
+                    "long": -118.44266668518775
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 5,
+                "injured": 15,
+                "collapsed": 2,
+                "priority": 1
+            }
+        },
+        {
+            "p2_19": {
+                "coordinates": {
+                    "lat": 34.068543420853125,
+                    "long": -118.44169577269949
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 6,
+                "injured": 12,
+                "collapsed": 3,
+                "priority": 1
+            }
+        },
+        {
+            "p2_20": {
+                "coordinates": {
+                    "lat": 34.06936742797463,
+                    "long": -118.4428838639296
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 7,
+                "injured": 13,
+                "collapsed": 3,
+                "priority": 1
+            }
+        },
+        {
+            "p2_21": {
+                "coordinates": {
+                    "lat": 34.06936779536029,
+                    "long": -118.44229075283056
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 5,
+                "injured": 12,
+                "collapsed": 3,
+                "priority": 1
+            }
+        },
+        {
+            "p2_22": {
+                "coordinates": {
+                    "lat": 34.068830785896225,
+                    "long": -118.44298092920896
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 6,
+                "injured": 13,
+                "collapsed": 3,
+                "priority": 1
+            }
+        },
+        {
+            "p2_23": {
+                "coordinates": {
+                    "lat": 34.06885555488724,
+                    "long": -118.44300988471713
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 7,
+                "injured": 11,
+                "collapsed": 3,
+                "priority": 1
+            }
+        },
+        {
+            "p2_24": {
+                "coordinates": {
+                    "lat": 34.069483884721166,
+                    "long": -118.44309194563365
+                },
+                "status": false,
+                "fire": true,
+                "resourcesNeeded": 7,
+                "injured": 11,
+                "collapsed": 3,
+                "priority": 1
+            }
+        }
+    ],
+    "3": [
+        {
+            "p3_0": {
+                "coordinates": {
+                    "lat": 34.07445351954803,
+                    "long": -118.44042268518774
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_2": {
+                "coordinates": {
+                    "lat": 34.07420778589623,
+                    "long": -118.44073692920895
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_3": {
+                "coordinates": {
+                    "lat": 34.07395041364994,
+                    "long": -118.44072060282075
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 3,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_4": {
+                "coordinates": {
+                    "lat": 34.07372274090099,
+                    "long": -118.4404726713612
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 3,
+                "injured": 1,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_6": {
+                "coordinates": {
+                    "lat": 34.073958376934584,
+                    "long": -118.44030433229946
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_7": {
+                "coordinates": {
+                    "lat": 34.07416005596019,
+                    "long": -118.44003282226663
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 3,
+                "injured": 1,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_8": {
+                "coordinates": {
+                    "lat": 34.074744795360296,
+                    "long": -118.44004675283055
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_9": {
+                "coordinates": {
+                    "lat": 34.074232554887246,
+                    "long": -118.44076588471712
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 3,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_10": {
+                "coordinates": {
+                    "lat": 34.07394816962414,
+                    "long": -118.44049637676342
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 3,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_11": {
+                "coordinates": {
+                    "lat": 34.07431940387739,
+                    "long": -118.44061649782329
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_12": {
+                "coordinates": {
+                    "lat": 34.07443679366263,
+                    "long": -118.43985542941786
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_13": {
+                "coordinates": {
+                    "lat": 34.07413279139799,
+                    "long": -118.44049002717733
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_14": {
+                "coordinates": {
+                    "lat": 34.07418955288331,
+                    "long": -118.44000468840441
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_15": {
+                "coordinates": {
+                    "lat": 34.07392042085313,
+                    "long": -118.43945177269948
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 3,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_16": {
+                "coordinates": {
+                    "lat": 34.07486088472117,
+                    "long": -118.44084794563365
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_17": {
+                "coordinates": {
+                    "lat": 34.07471349170694,
+                    "long": -118.43983244895935
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 3,
+                "injured": 1,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_19": {
+                "coordinates": {
+                    "lat": 34.074389457742335,
+                    "long": -118.43924787243176
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 1,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_20": {
+                "coordinates": {
+                    "lat": 34.07512390108856,
+                    "long": -118.43992697791971
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_21": {
+                "coordinates": {
+                    "lat": 34.073735344825685,
+                    "long": -118.4401807921511
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_22": {
+                "coordinates": {
+                    "lat": 34.07431510687336,
+                    "long": -118.44000659239315
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 3,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_23": {
+                "coordinates": {
+                    "lat": 34.07402991412387,
+                    "long": -118.44083448431108
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 3,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_24": {
+                "coordinates": {
+                    "lat": 34.074744427974636,
+                    "long": -118.44063986392959
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_25": {
+                "coordinates": {
+                    "lat": 34.075106172681835,
+                    "long": -118.44060387820683
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 3,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_26": {
+                "coordinates": {
+                    "lat": 34.07419808222382,
+                    "long": -118.44074181448204
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 0,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_27": {
+                "coordinates": {
+                    "lat": 34.0737436904114,
+                    "long": -118.43972563814508
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 1,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_28": {
+                "coordinates": {
+                    "lat": 34.074354079476244,
+                    "long": -118.43998939844515
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 2,
+                "injured": 2,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p3_29": {
+                "coordinates": {
+                    "lat": 34.07444408515998,
+                    "long": -118.44047412492324
+                },
+                "status": false,
+                "fire": false,
+                "resourcesNeeded": 3,
+                "injured": 1,
+                "collapsed": 0,
+                "priority": 3
+            }
+        },
+        {
+            "p4_0": {
+                "coordinates": {
+                    "lat": 34.0751896904114,
+                    "long": -118.44033063814508
+                },
+                "status": true
+            }
+        }
+    ]
+}
