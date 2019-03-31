@@ -21,7 +21,8 @@ const ICON = `M20.2,15.7L20.2,15.7c1.1-1.6,1.8-3.6,1.8-5.7c0-5.6-4.5-10-10-10S2,
 const pinStyle = {
   cursor: 'pointer',
   fill: '#d00',
-  stroke: 'none'
+  stroke: 'none',
+  strokeWidth: 0
 };
 
 const paintLayer = {
@@ -47,44 +48,71 @@ const paintLayer = {
 class Pin extends React.Component {
 
   render() {
-    console.log("ligma");
 
-    const {size = 20, onClick} = this.props;
+    var {size = 20, onClick} = this.props;
     var fillColor;
     var marker = this.props.marker;
-    switch(this.props.displayMode)
+    console.log("ligma");
+    if (!!marker)
     {
-      case "injured":
-        fillColor = '#9fff45';
-        break;
-      case "safety":
-        fillColor = marker.status ? '#3e8934' : '#893434';
-        break;
-      case "fire":
-        fillColor = '#893434';
-        break;
-      case "collapsed": // range: 0-3
-        
-        var a = marker.collapsed / 3.0 * 100;
-        // fillColor = "hsl(" + a.toString() + ", 100%, 50%)";
-        fillColor = 'hsl(0.5, ' + a.toString() + '%, 50%)';
-        console.log(fillColor);
-        break;
-      case "resources":
-        var b = marker.resourcesNeeded / 7.0 * 100;
-        fillColor = 'hsl(75, ' + b.toString() + '%, 50%)'; // range: 0-7
-        break;
-      case "priority":
-        if (marker.priority === 1)
-          fillColor = '#893434'; // red
-        else if (marker.priority === 2)
-          fillColor = '#e5dd80'; // yellow
-        else
-          fillColor = '#3e8934'; // green
-        break;
-      default:
-        fillColor="#000";
-        break;
+      switch(this.props.displayMode)
+      {
+        case "injured":
+          var a = marker.injured / 15.0 * 100;
+          // fillColor = "hsl(" + a.toString() + ", 100%, 50%)";
+          fillColor = 'hsl(356, ' + a.toString() + '%, 48.1%)';
+          break;
+        case "safety":
+          fillColor = marker.status ? '#238823' : '#D2222D';
+          break;
+        case "fire":
+          var rand = Math.random();
+          if (rand > 0.66)
+            fillColor = '#ffbf10';
+          else if (rand > 0.33)
+            fillColor = '#ee5519';
+          else
+            fillColor = '#c8200e';
+          break;
+        case "collapsed": // range: 0-3
+          
+          var a = marker.collapsed / 3.0 * 100;
+          // fillColor = "hsl(" + a.toString() + ", 100%, 50%)";
+          fillColor = 'hsl(347, ' + a.toString() + '%, 33.1%)';
+          console.log(fillColor);
+          break;
+        case "resources":
+          var b = marker.resourcesNeeded / 7.0 * 100;
+          fillColor = 'hsl(184, ' + b.toString() + '%, 50.1%)'; // range: 0-7
+          break;
+        case "priority":
+        case "cluster":
+          if (marker.priority === 1)
+            fillColor = '#D2222D'; // red
+          else if (marker.priority === 2)
+            fillColor = '#FFBF00'; // yellow
+          else
+            fillColor = '#238823'; // green
+          break;
+        default:
+          fillColor="#D2222D";
+          break;
+      }
+    }
+    if (!marker)
+    {
+      size = 40;
+      fillColor="#000000"
+    }
+    else if (marker.displayCard && marker.displayCard === true)
+    {
+      pinStyle.stroke = 'white'
+      pinStyle.strokeWidth = 4;
+    }
+    else
+    {
+      pinStyle.stroke = 'none'
+      pinStyle.strokeWidth = 0;
     }
     return (
       <svg 
@@ -123,6 +151,11 @@ class Dot extends React.Component {
   }
 }
 
+const centroids = [[  34.0690049,  -118.44265542],
+[  34.07239212, -118.45148621],
+[  34.07433306, -118.44027857],
+[  34.07582755, -118.44122404]]
+
 const initialViewState = {
   width: '100%',
   height: '100%',
@@ -143,7 +176,7 @@ export class Map extends React.Component {
 
   _renderMarker = (marker, index) => {
     console.log(marker);
-    if (marker.display === true || true) { // HALPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+    if (marker.display === true) { // HALPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
       return (
         // <Marker 
         //   key={`marker-${index}`}
@@ -171,14 +204,29 @@ export class Map extends React.Component {
     }
   }
 
+  _onClick(marker, e) {
+    console.log(e);
+    console.log(marker);
+    for (var i = 0; i < this.props.markers.length; i++)
+    {
+      for (var mark in this.props.markers[i])
+      {
+        this.props.markers[i][mark].displayCard = false;
+      }
+    }
+    marker.displayCard = true;
+    this.props.getMarkers(this.props.markers);
+    console.log("click");
+  }
+
   render() {
     const layers = [
       new LineLayer({id: 'line-layer', data})
     ];
     return (
       <Mapp
-        style="mapbox://styles/mapbox/streets-v9"
-        zoom={[16]}
+        style="mapbox://styles/mapbox/outdoors-v11"
+        zoom={[15]}
         containerStyle={{
           height: "100%",
           width: "100%"
@@ -203,10 +251,13 @@ export class Map extends React.Component {
               {
                 return (
                   <Marker
-                  coordinates={[ marker[mark].coordinates.long, marker[mark].coordinates.lat]}
-                  anchor="bottom"
+                    coordinates={[ marker[mark].coordinates.long, marker[mark].coordinates.lat]}
+                    anchor="bottom"
                   >
-                    <Pin marker={marker[mark]} displayMode={this.props.displayMode.value}/>
+                    <Pin
+                      onClick={(e) => this._onClick(marker[mark], e)}
+                      marker={marker[mark]} 
+                      displayMode={this.props.displayMode.value}/>
                   </Marker>
                 )
               }
@@ -214,6 +265,18 @@ export class Map extends React.Component {
             }
           }
         ) }
+        { this.props.displayMode.value === 'cluster' && 
+          centroids.map((centroid) => 
+            <Marker
+              coordinates={[ centroid[1], centroid[0]]}
+              anchor="bottom"
+            >
+              <Pin
+                marker={null} 
+                displayMode={this.props.displayMode.value}/>
+            </Marker>
+          )
+        }
       </Mapp>
       // <DeckGL
       //   initialViewState={initialViewState}

@@ -179,7 +179,7 @@
                 "status": false,
                 "injured": 6,
                 "fire": true,
-                "collapsed": true,
+                "collapsed": 2,
                 "priority": 1,
                 "resourcesNeeded": 1
             }

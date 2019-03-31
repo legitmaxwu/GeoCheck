@@ -27,12 +27,13 @@ const cardContainerStyles = css`
 `
 
 const options = [
-  { value: 'injured', label: 'Number Injured' },
-  { value: 'safety', label: 'Safety Level' },
-  { value: 'fire', label: 'Fires' },
-  { value: 'collapsed', label: 'Collapsed Buildings' },
-  { value: 'resources', label: 'Need Food/Water' },
+  { value: 'injured', label: 'Number of People Injured' },
+  { value: 'safety', label: 'Are People Safe?' },
+  { value: 'fire', label: 'Location of Fires' },
+  { value: 'collapsed', label: 'Infrastructure Damage' },
+  { value: 'resources', label: 'Food and Water Needs' },
   { value: 'priority', label: 'Priority Level' },
+  { value: 'cluster', label: "Recommended Response Locations"},
 ];
 
 export class PantryMap extends React.Component {
@@ -87,12 +88,54 @@ export class PantryMap extends React.Component {
         {
           marker.display = true;
         }
+        else if (option === "cluster")
+        {
+          marker.display = true;
+        }
       }
     }
     this.setState({markers: this.props.markers});
   }
 
   componentDidUpdate() {
+    for (var i = 0; i < this.props.markers.length; i++)
+    {
+      var mark = this.props.markers[i];
+      for (var m in mark)
+      {
+        var marker = mark[m];
+        marker.display = false;
+        var option = this.state.selectedOption.value;
+        if (option === "injured" && marker.injured && marker.injured > 0)
+        {
+          marker.display = true;
+        }
+        else if (option === "safety")
+        {
+          marker.display = true;
+        }
+        else if (option === "fire" && marker.fire && marker.fire === true)
+        {
+          marker.display = true;
+        }
+        else if (option === "collapsed" && marker.collapsed && marker.collapsed > 0)
+        {
+          marker.display = true;
+        }
+        else if (option === "resources" && marker.resourcesNeeded && marker.resourcesNeeded > 0)
+        {
+          marker.display = true;
+        }
+        else if (option === "priority" && marker.priority)
+        {
+          marker.display = true;
+        }
+        else if (option === "cluster")
+        {
+          marker.display = true;
+        }
+      }
+    }
     if (this.state.markers !== this.props.markers)
     {
       this.setState({markers: this.props.markers});
@@ -110,7 +153,7 @@ export class PantryMap extends React.Component {
 
         <div className={ cardContainerStyles }>
           <div className={css`
-            background-color: #00929E;
+            background-color: gray;
             padding: 15px;
           `}>
             <Select
@@ -128,7 +171,7 @@ export class PantryMap extends React.Component {
               {
                 for (var mark in marker)
                 {
-                  return marker[mark].display && <PantryCard marker={ marker[mark] }/>
+                  return marker[mark].displayCard && <PantryCard name={mark} marker={ marker[mark] }/>
                 }
               }
             ) }
@@ -142,6 +185,7 @@ export class PantryMap extends React.Component {
           <Map
             displayMode = { this.state.selectedOption }
             markers = { this.state.markers }
+            getMarkers = { this._getMarkers }
           />
         </div>
       </div>

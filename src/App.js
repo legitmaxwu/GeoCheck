@@ -10,10 +10,44 @@ import DISASTER_DATA from './data/disaster'
 var MARKER_DATA = [];
 var static_disaster_data = [];
 var disaster_data = [];
-var useStaticData = false;
+var useStaticData = true;
 var api_data = [];
 
 class App extends Component {
+  constructor(props)
+  {
+    super(props);
+    this._callAPI = this._callAPI.bind(this);
+  }
+  _callAPI() {
+    console.log("call");
+    fetch(`https://39cbcebf.ngrok.io/coords/`)
+    .then(res => {
+      return res.clone().json();
+    })
+    .then(
+      res => {
+        console.log(res);
+        api_data = res;
+        var counter = 0;
+        disaster_data = [];
+        for (var cluster in api_data)
+        {
+          for (var j = 0; j < api_data[cluster].length; j++)
+          {
+            for (var marker in api_data[cluster][j])
+            {
+              api_data[cluster][j][marker].display = true;
+              api_data[cluster][j][marker].displayCard = false;
+              api_data[cluster][j][marker].cluster = counter;
+            }
+            disaster_data.push(api_data[cluster][j]);
+          }
+          counter++;
+        }
+      }
+    ).then(this.setState({markers: disaster_data}))
+  }
   componentDidMount() {
     // console.log(CRIME_DATA);
     // for (var i = 0; i < CRIME_DATA.length; i++)
@@ -61,31 +95,7 @@ class App extends Component {
       this.forceUpdate();
     }
     else {
-      fetch(`https://39cbcebf.ngrok.io/coords/`)
-      .then(res => {
-        return res.clone().json();
-      })
-      .then(
-        res => {
-          console.log(res);
-          api_data = res;
-          var counter = 0;
-          for (var cluster in api_data)
-          {
-            for (var j = 0; j < api_data[cluster].length; j++)
-            {
-              for (var marker in api_data[cluster][j])
-              {
-                api_data[cluster][j][marker].display = true;
-                api_data[cluster][j][marker].cluster = counter;
-              }
-              disaster_data.push(api_data[cluster][j]);
-            }
-            counter++;
-          }
-          this.forceUpdate();
-        }
-      );
+      window.setInterval(this._callAPI, 5000);
     }
 
     // console.log("ligma");
