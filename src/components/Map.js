@@ -47,37 +47,44 @@ const paintLayer = {
 class Pin extends React.Component {
 
   render() {
+    console.log("ligma");
+
     const {size = 20, onClick} = this.props;
     var fillColor;
     var marker = this.props.marker;
-    console.log(this.props.displayMode);
     switch(this.props.displayMode)
     {
       case "injured":
         fillColor = '#9fff45';
         break;
       case "safety":
-        fillColor = marker.safety ? '#3e8934' : '#893434';
+        fillColor = marker.status ? '#3e8934' : '#893434';
         break;
       case "fire":
         fillColor = '#893434';
         break;
-      case "collapsed":
-        fillColor = '#893434';
+      case "collapsed": // range: 0-3
+        
+        var a = marker.collapsed / 3.0 * 100;
+        // fillColor = "hsl(" + a.toString() + ", 100%, 50%)";
+        fillColor = 'hsl(0.5, ' + a.toString() + '%, 50%)';
+        console.log(fillColor);
         break;
       case "resources":
-        fillColor = '#893434';
+        var b = marker.resourcesNeeded / 7.0 * 100;
+        fillColor = 'hsl(75, ' + b.toString() + '%, 50%)'; // range: 0-7
         break;
       case "priority":
         if (marker.priority === 1)
-          fillColor = '#893434';
+          fillColor = '#893434'; // red
         else if (marker.priority === 2)
-          fillColor = '#e5dd80';
+          fillColor = '#e5dd80'; // yellow
         else
-          fillColor = '#3e8934';
+          fillColor = '#3e8934'; // green
         break;
       default:
-        fillColor="#000"
+        fillColor="#000";
+        break;
     }
     return (
       <svg 
@@ -135,7 +142,8 @@ const Mapp = ReactMapboxGl({
 export class Map extends React.Component {
 
   _renderMarker = (marker, index) => {
-    if (marker.display === true) {
+    console.log(marker);
+    if (marker.display === true || true) { // HALPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
       return (
         // <Marker 
         //   key={`marker-${index}`}
@@ -150,10 +158,13 @@ export class Map extends React.Component {
         //   /> */}
         //   <Dot status = {marker.status}/>
         // </Marker>
-
         <Marker
-        coordinates={[ parseFloat(marker.longitude), parseFloat(marker.latitude)]}
-        anchor="bottom">
+          coordinates={[ marker.coordinates.long, marker.coordinates.lat]}
+          anchor="bottom"
+        >
+          {console.log("return shit")}
+          <div>safsaofsafsafa</div>
+          {console.log("sFOIFSF")}
           <Pin marker={marker} displayMode={this.props.displayMode.value}/>
         </Marker>
       );
@@ -167,12 +178,12 @@ export class Map extends React.Component {
     return (
       <Mapp
         style="mapbox://styles/mapbox/streets-v9"
-        zoom={[15]}
+        zoom={[16]}
         containerStyle={{
           height: "100%",
           width: "100%"
         }}
-        center={[-118.2537, 34.0422]}
+        center={[-118.4452, 34.0729]}
       >
         <Layer
           id="3d-buildings"
@@ -184,7 +195,25 @@ export class Map extends React.Component {
           paint={paintLayer}
         >
         </Layer>
-        {this.props.markers && this.props.markers.map(this._renderMarker)}
+        { this.props.markers.map(marker => 
+          {
+            for (var mark in marker)
+            {
+              if (marker[mark].display === true)
+              {
+                return (
+                  <Marker
+                  coordinates={[ marker[mark].coordinates.long, marker[mark].coordinates.lat]}
+                  anchor="bottom"
+                  >
+                    <Pin marker={marker[mark]} displayMode={this.props.displayMode.value}/>
+                  </Marker>
+                )
+              }
+              // this._renderMarker(marker[mark]);
+            }
+          }
+        ) }
       </Mapp>
       // <DeckGL
       //   initialViewState={initialViewState}

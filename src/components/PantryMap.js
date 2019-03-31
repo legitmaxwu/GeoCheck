@@ -57,32 +57,36 @@ export class PantryMap extends React.Component {
     console.log(`Option selected:`, selectedOption);
     for (var i = 0; i < this.props.markers.length; i++)
     {
-      var marker = this.props.markers[i];
-      marker.display = false;
-      var option = selectedOption.value;
-      if (option === "injured" && marker.injured && marker.injured > 0)
+      var mark = this.props.markers[i];
+      for (var m in mark)
       {
-        marker.display = true;
-      }
-      if (option === "safety")
-      {
-        marker.display = true;
-      }
-      if (option === "fire" && marker.fire === true)
-      {
-        marker.display = true;
-      }
-      if (option === "collapsed" && marker.collapsed === true)
-      {
-        marker.display = true;
-      }
-      if (option === "resources" && marker.resourcesNeeded < 0)
-      {
-        marker.display = true;
-      }
-      if (option === "priority" && marker.priority)
-      {
-        marker.display = true;
+        var marker = mark[m];
+        marker.display = false;
+        var option = selectedOption.value;
+        if (option === "injured" && marker.injured && marker.injured > 0)
+        {
+          marker.display = true;
+        }
+        else if (option === "safety")
+        {
+          marker.display = true;
+        }
+        else if (option === "fire" && marker.fire && marker.fire === true)
+        {
+          marker.display = true;
+        }
+        else if (option === "collapsed" && marker.collapsed && marker.collapsed > 0)
+        {
+          marker.display = true;
+        }
+        else if (option === "resources" && marker.resourcesNeeded && marker.resourcesNeeded > 0)
+        {
+          marker.display = true;
+        }
+        else if (option === "priority" && marker.priority)
+        {
+          marker.display = true;
+        }
       }
     }
     this.setState({markers: this.props.markers});
@@ -121,9 +125,12 @@ export class PantryMap extends React.Component {
             margin: 20px;
           `}>
             { this.props.markers.map(marker => 
-              ( marker.display &&
-                <PantryCard marker={ marker }/>
-              )
+              {
+                for (var mark in marker)
+                {
+                  return marker[mark].display && <PantryCard marker={ marker[mark] }/>
+                }
+              }
             ) }
           </div>
         </div>

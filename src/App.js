@@ -10,7 +10,8 @@ import DISASTER_DATA from './data/disaster'
 var MARKER_DATA = [];
 var static_disaster_data = [];
 var disaster_data = [];
-var useStaticData = true;
+var useStaticData = false;
+var api_data = [];
 
 class App extends Component {
   componentDidMount() {
@@ -60,22 +61,25 @@ class App extends Component {
       this.forceUpdate();
     }
     else {
-      fetch(`http://localhost:5000/api/pantries`)
-      .then(res => res.json())
+      fetch(`https://39cbcebf.ngrok.io/coords/`)
+      .then(res => {
+        return res.clone().json();
+      })
       .then(
         res => {
-          DISASTER_DATA = res;
+          console.log(res);
+          api_data = res;
           var counter = 0;
-          for (var cluster in DISASTER_DATA)
+          for (var cluster in api_data)
           {
-            for (var j = 0; j < DISASTER_DATA[cluster].length; j++)
+            for (var j = 0; j < api_data[cluster].length; j++)
             {
-              for (var marker in DISASTER_DATA[cluster][j])
+              for (var marker in api_data[cluster][j])
               {
-                DISASTER_DATA[cluster][j][marker].display = true;
-                DISASTER_DATA[cluster][j][marker].cluster = counter;
+                api_data[cluster][j][marker].display = true;
+                api_data[cluster][j][marker].cluster = counter;
               }
-              disaster_data.push(DISASTER_DATA[cluster][j]);
+              disaster_data.push(api_data[cluster][j]);
             }
             counter++;
           }
@@ -84,9 +88,9 @@ class App extends Component {
       );
     }
 
-    console.log("ligma");
-    console.log(static_disaster_data);
-    console.log(disaster_data);
+    // console.log("ligma");
+    // console.log(static_disaster_data);
+    // // console.log(disaster_data);
 
     // if (useStaticData) {
     //   for (var i = 0; i < STATIC_MARKER_DATA.length; i++)
@@ -131,7 +135,7 @@ class App extends Component {
       <div className="App">
         <div className={css`width: 100%; height: 100%;`}>
           <PantryMap 
-            // markers={ useStaticData ? STATIC_MARKER_DATA : MARKER_DATA }
+            //markers={ useStaticData ? STATIC_MARKER_DATA : MARKER_DATA }
             markers={ useStaticData ? static_disaster_data : disaster_data }
           />
         </div>
